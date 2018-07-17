@@ -231,8 +231,8 @@
 - (void) orientationChanged:(NSNotification *)note
 {
     if(fullView != nil) {
-        CGFloat viewWidth = self.viewController.view.bounds.size.width * 2;
-        CGFloat viewHeight = self.viewController.view.bounds.size.height * 2;
+        CGFloat viewWidth = self.viewController.view.bounds.size.width;
+        CGFloat viewHeight = self.viewController.view.bounds.size.height;
 
         [fullView setFrame:CGRectMake(0, 0, viewWidth, viewHeight)];
         [imageView setFrame:CGRectMake(0, 0, viewWidth, viewHeight)];
